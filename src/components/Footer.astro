@@ -1,0 +1,28 @@
+---
+import Social from "./Social.astro";
+
+const username = "Abeeujah";
+---
+
+<style>
+  footer {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .linkedin {
+    padding: 0.5rem 1rem;
+    color: white;
+    background-color: #4c1d95;
+    text-decoration: none;
+  }
+</style>
+
+<footer>
+  <Social platform="github" username={username} />
+  <Social platform="twitter" username={username} />
+  <a href={`https://www.linkedin.com/in/${username}`} class="linkedin"
+    >linkedin</a
+  >
+</footer>
