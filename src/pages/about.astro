@@ -32,7 +32,7 @@ const fontWeight = "bold";
 const textCase = "uppercase";
 ---
 
-<BaseLayout>
+<BaseLayout pageTitle={pageTitle}>
   <style define:vars={{ skillColor, fontWeight, textCase }}>
     .skill {
       color: var(--skillColor);
@@ -41,7 +41,6 @@ const textCase = "uppercase";
     }
   </style>
 
-  <h1>{pageTitle}</h1>
   <h2>... and my new Astro site!</h2>
   <p>
     I am working through Astro's introductory tutorial. This is the second page
